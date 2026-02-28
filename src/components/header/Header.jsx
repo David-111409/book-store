@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../../assets/iamges/logo.png';
+import { useState } from 'react';
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="header">
+    <header className="header">
       <div className="logo">
         <img src={logo} alt="Logo" />
         <div className="logo-text">
@@ -12,8 +15,16 @@ const Header = () => {
           <b>SAFARI</b>
         </div>
       </div>
+
       <nav>
-        <ul className="nav-list">
+        <div className="nav-menu">
+          {isMenuOpen ? (
+            <i className="bi bi-x-lg" onClick={() => setIsMenuOpen(false)}></i>
+          ) : (
+            <i className="bi bi-list" onClick={() => setIsMenuOpen(true)}></i>
+          )}
+        </div>
+        <ul className={`nav-list ${isMenuOpen ? ' open' : ' closed'}`}>
           <li className="item">
             <Link className="nav-link" to="/">
               <i className="bi bi-house-fill"></i>
@@ -43,7 +54,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 
