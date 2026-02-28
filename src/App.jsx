@@ -1,6 +1,5 @@
-
 function App() {
-  return <div>hello world, from store project</div>
+    return <div>Hello World</div>
 }
 
-export default App
+export default App;
