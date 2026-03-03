@@ -1,0 +1,86 @@
+.hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: url('../../assets/iamges/dubai.jpg') no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.input-box {
+  height: 60px;
+  background-color: #fff;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.input-box .bi-search {
+  font-size: 21px;
+}
+
+.input-box .input-part {
+  width: 95%;
+  height: 100%;
+}
+
+.input-box .input-part input {
+  padding-left: 10px;
+  height: 100%;
+  width: 90%;
+  outline: none;
+  border: none;
+  font-size: 21px;
+}
+
+.input-box .btn {
+  background-color: blue;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 12px 21px;
+  border-radius: 60px;
+}
+
+.hero .hero-title {
+  color: white;
+  margin-top: 220px;
+}
+
+.hero .hero-title h3 {
+  font-size: 40px;
+}
+
+.hero .hero-title h1 {
+  font-size: 70px;
+}
+@media (max-width: 720px) {
+  .hero {
+    padding: 21px;
+  }
+
+  .input-box .input-part input {
+    font-size: 17px;
+  }
+
+  .hero .hero-title h3 {
+    font-size: 30px;
+  }
+
+  .hero .hero-title h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .input-box .input-part input {
+    font-size: 14px;
+  }
+
+  .input-box .btn {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+}

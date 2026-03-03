@@ -27,14 +27,14 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src={logo} alt="Logo" />
         <div className="logo-text">
           <b>DUBAI</b>
           <b>DESERT</b>
           <b>SAFARI</b>
         </div>
-      </div>
+      </Link>
 
       <nav ref={navRef}>
         <div className="nav-menu">
