@@ -1,0 +1,66 @@
+.services {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.service-item {
+  border: 1px solid gray;
+  border-radius: 50px;
+  padding: 10px 21px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.service-icon {
+  margin-right: 5px;
+}
+
+.service-icon.bi-card-image {
+  color: gray;
+}
+
+.service-icon.bi-people-fill {
+  color: rgb(52, 5, 96);
+}
+
+.service-icon.bi-buildings {
+  color: var(--orange-color);
+}
+
+.service-icon.bi-globe {
+  color: #10000e;
+}
+
+/* Media Queries */
+@media (max-width: 940px) {
+  .service-item {
+    padding: 7px 17px;
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 780px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: stretch;
+    gap: 15px;
+  }
+
+  .service-item {
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-item {
+    font-size: 24px;
+    text-align: center;
+  }
+}
