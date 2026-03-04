@@ -1,9 +1,13 @@
 import './Pagination.css';
-const pages = [1, 2, 3, 4];
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
+  const pages = [1, 2, 3, 4];
   return (
     <div className="pagination">
-      <button disabled = {currentPage === 1} className="page prev" onClick={() => onPageChange(currentPage - 1)}>
+      <button
+        disabled={currentPage === 1}
+        className="page prev"
+        onClick={() => onPageChange(currentPage - 1)}
+      >
         Previous
       </button>
 
@@ -17,7 +21,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         </button>
       ))}
       <button
-      disabled = {currentPage === totalPages}
+        disabled={currentPage === totalPages}
         className="page next"
         onClick={() => onPageChange(currentPage + 1)}
       >

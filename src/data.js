@@ -1,4 +1,4 @@
-export const toursList = [
+const toursList = [
   {
     id: 1,
     title: 'Desert Safari, Camel Ride & Al Khamya Camp',
@@ -318,3 +318,5 @@ export const currencies = [
     value: 'Canadian Dollar',
   },
 ];
+
+export default toursList;
